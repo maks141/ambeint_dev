@@ -98,20 +98,22 @@ legend {
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 
 ::-webkit-scrollbar {
-  width: 0;
+    width: 0;
 }
 
 .container {
-  margin: 0 auto;
+    margin: 0 auto;
 	width: 85%;
-  height: 100vh;
+    height: 100vh;
 }
 
 /* Шапка */
 .header-wrapper {
     background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.7)), url(img/main_bg.jpg);
-    min-height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     background-size: cover;
+    min-height: 100vh;
 }
 
 .header-block {
@@ -132,10 +134,10 @@ legend {
     font-weight: 200;
     opacity: 0.9;
     letter-spacing: 0.1em;
+    transition: 0.3s;
 }
 
 .header-h1:hover {
-    transition: 0.1s;
     opacity: 1;
 }
 
@@ -170,6 +172,7 @@ legend {
     font-family: 'Open Sans', sans-serif;
     font-weight: 200;
     opacity: 0.9;
+    transition: 0.3s;
 }
 
 .header-menu a:hover {

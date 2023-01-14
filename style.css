@@ -132,11 +132,16 @@ legend {
 .header-h1 {
     font-family: 'Montserrat', sans-serif;
     font-weight: 200;
-    opacity: 0.9;
+    transform: translate(0px, 120%);
+    opacity: 0;
     letter-spacing: 0.1em;
-    transition: 0.3s;
+    transition: all 0.6s ease 0s;
 }
-
+.header-h1._active
+{
+    transform: translate(0px, 0px);
+    opacity: 0.9;
+}
 .header-h1:hover {
     opacity: 1;
 }
@@ -162,8 +167,27 @@ legend {
     justify-content: space-between;
 }
 
-.header-menu li {  
+.header-nav li {  
     list-style-type: none;
+    opacity: 0;
+    transform: translate(0px, 120%);
+    transition: all 0.3s ease 0s;
+}
+.header-nav._active li:nth-child(1) {
+    transition: all 0.8s ease 0s;
+}
+.header-nav._active li:nth-child(2) {
+    transition: all 0.8s ease 0.15s;
+}
+.header-nav._active li:nth-child(3) {
+    transition: all 0.8s ease 0.3s;
+}
+.header-nav._active li:nth-child(4) {
+    transition: all 0.8s ease 0.45s;
+}
+.header-nav._active li {
+    opacity: 0.9;
+    transform: translate(0px, 0px);
 }
 
 .header-menu a {
@@ -174,7 +198,6 @@ legend {
     opacity: 0.9;
     transition: 0.3s;
 }
-
 .header-menu a:hover {
   color: rgb(146, 202, 255);
   transition: 0.2s;

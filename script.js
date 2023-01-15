@@ -1,5 +1,6 @@
 const animItems = document.querySelectorAll('._anim-items');
 
+// Плавное появление элементов.
 if (animItems.length > 0) {
     window.addEventListener('scroll', animOnScroll);
     function animOnScroll(params) {
